@@ -1,0 +1,44 @@
+# Ignore files that contain sensitive information
+*.pyc
+*.swp
+*.swo
+
+# Ignore Frappe and Bench specific files
+*.log
+*.pid
+*.sqlite
+*.sublime-workspace
+*.sublime-project
+
+# Ignore environment files and private data
+.env
+env/
+node_modules/
+sites/*/private/*
+sites/*/public/files/*
+sites/assets/
+
+# Ignore compiled assets and cache files
+__pycache__/
+*.cache
+*.lock
+*.sock
+*.pid
+
+# Ignore backups
+sites/*/private/backups/*
+
+# Ignore site configuration and database files
+sites/common_site_config.json
+sites/*/site_config.json
+sites/*/*.sql
+sites/*/*.sql.gz
+sites/apps.txt
+sites/apps.json
+
+# Ignore dependencies
+frappe-bench/node_modules/
+
+# Ignore Frappe and library_management apps
+apps/frappe
+apps/library_management
